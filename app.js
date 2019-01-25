@@ -9,7 +9,7 @@ app.use(parser.urlencoded({
 
 var admin = express();
 admin.get('/', (req, res) => {
-  res.send('admin homepage!');
+  res.send(db);
 });
 
 var secret = express();
