@@ -2,9 +2,9 @@
   "name": "nodejs-api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "start": "nodemon app/index.js",
+    "deploy": "NODE_ENV=production node app/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   "homepage": "https://github.com/geekykant/NodeJS-API#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
     "express": "^4.16.4",
-    "mongodb": "^2.2.16"
-  }
+    "pg": "^7.9.0"
+  },
+  "devDependencies": {}
 }
